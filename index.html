@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syah'hida</title>
+
+    <link rel="shortcut icon" href="images/as-syahidah (1).png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <img src="images/as-syahidah (1).png" alt="logo" class="logo">
+        <i class="bx bx-menu-alt-left" id="menu-icon" style="color: rgb(1, 1, 1);"></i>
+        <nav class="navbar">
+            <a href="index.html">Jadwal Sholat</a>
+            <a href="asmaul-husna.html">Asmaul Husna</a>
+            <a href="list-surat.html">Al-Quran</a>
+        </nav>
+        <div class="tombol">
+            <button class="button">User</button>
+        </div>
+    </header>
+
+    
+    <!-- home -->
+    <section class="awal">
+        <img src="images/Murad Naser (1).png" alt="poto" class="gambar">
+    </section>
+
+    <section>
+        <h3 class="judul">TIME</h3>
+        <div class="hero">
+            <div class="container-jam">
+                <div class="clock">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="waktu-sekarang">
+        <h1>Sekarang waktu shalat <strong id="solat"></strong> Di Jakarta</h1>
+    </section>
+    
+    <section class="jadwal-solat">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="title">Jadwal Sholat</h2>
+                    <div class="lokasi">
+                        <p>Kota/Lokasi: <strong id="city"></strong></p>
+                        <p>Provinsi/Daerah: <strong id="prof"></strong></p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th class="th1">Tanggal</th>
+                                    <th>Imsak</th>
+                                    <th>Subuh</th>
+                                    <th>Terbit</th>
+                                    <th>Dzuhur</th>
+                                    <th>Asar</th>
+                                    <th>Magrib</th>
+                                    <th>Isya</th>
+                                </tr>
+                            </thead>
+                            <tbody id="list-jadwal"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>As-Syahidah &copy; 2023</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
