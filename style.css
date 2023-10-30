@@ -187,16 +187,65 @@ header.sticky .button{
 /* home */
 
 .awal{
-    margin-top: 10rem;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.gambar{
-    width: 80rem;
-    height: 20rem;
-    border-radius: 10px;
+
+.main{
+    width: 70rem;
+    height: 25rem;
+    margin-top: 20rem;
+    margin-bottom: -150px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+
+.wrap{
+    display: flex;
+    animation: slide 60s infinite;
+}
+
+.wrap img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0) ;
+    }
+
+    10%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    50%{
+        transform: translateX(-300%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    90%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
 }
 
 /* waktu pengingat */
