@@ -44,7 +44,7 @@ header{
 
 #menu-icon{
     font-size: 3.6rem;
-    color: black;
+    color: wheat;
     display: none;
 }
 
@@ -120,6 +120,68 @@ header.sticky .button{
     cursor: pointer ;
     color: white;
 }
+
+@media screen and (max-width:909px) {
+    .logo {
+        z-index: 999;
+    }
+    #menu-icon {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(50%, -50%);
+        transition: .5s;
+    }
+
+    #menu-icon {
+        display: block;
+        opacity: 0;
+        z-index: 999;
+    }
+
+    .header.sticky #menu-icon {
+        transform: translate(0, -50%);
+        opacity: 1;
+        transition-delay: .75s;
+    }
+
+    .header.sticky .navbar {
+        transition-delay: 0s;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        height: 0;
+        background: #00FFAB;
+        transition-delay: 0s;
+        overflow: hidden;
+        transition: 0;
+    }
+
+    .header.sticky .navbar {
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar.active {
+        top: 210%;
+        height: 200px;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
 
 
 /* home */
@@ -228,6 +290,58 @@ text-align: center;
     background-color: mediumaquamarine;
 }
 
+@media screen and (max-width: 700px) {
+    .table-primary th {
+        padding: .5rem 0;
+        font-size: .7rem;
+    }
+
+    .table td {
+        padding: 4px;
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lokasi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #prov {
+        font-size: 1rem;
+    }
+    
+    #city {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .table-primary th {
+        padding: .5rem 0;
+        font-size: .5rem;
+    }
+
+    .table td {
+        padding: 4px;
+        font-size: .5em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .table-primary th {
+        padding: .2rem 0;
+        font-size: .5rem;
+    }
+
+    .table td {
+        padding: 2px;
+        font-size: .5em;
+    }
+}
+
+
 /* asma ul */
 .kata-judul{
     display: flex;
@@ -334,6 +448,16 @@ text-align: center;
 
 #result :hover{
     transform: scale(1.08);
+}
+
+@media screen and (max-width: 700px) {
+    .kotak {
+        width: 100vw;
+    }
+    .tombol button {
+        padding: 10px;
+        font-size: .7em;
+    }
 }
 
 /* jam */
